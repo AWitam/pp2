@@ -2,7 +2,7 @@ package edu.dsw.pp2.i47109;
 
 import java.io.*;
 
-public class FileManager {
+public class FileCopier {
     private void copyFile(String originalFilePath) {
         try {
             InputStream inputStream = new BufferedInputStream(new FileInputStream(originalFilePath));
@@ -20,18 +20,13 @@ public class FileManager {
         }
     }
 
-    private String getFilePath() {
-        System.out.println("Type path to a file which you wish to copy >>");
-        return new InputReader().getInputValue();
-    }
-
     private String getCopyFileName(String originalName) {
         int extensionIndex = originalName.lastIndexOf('.');
         return originalName.substring(0, extensionIndex) + ".copy" + originalName.substring(extensionIndex);
     }
 
-    public void copy() {
-        String filePath = this.getFilePath();
+    public void makeCopy() {
+        String filePath = new InputReader().getInputValue("Type path to a file which you wish to copy >>\nExample: ./files/loremIpsum.txt");
         this.copyFile(filePath);
         System.out.println("Copy successful. Files saved into 'files' directory.");
     }
