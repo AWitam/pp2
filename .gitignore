@@ -1,0 +1,5 @@
+out/
+.idea/
+.idea_modules/
+*.iml
+.DS_Store
