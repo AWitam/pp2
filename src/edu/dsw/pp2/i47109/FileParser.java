@@ -20,14 +20,8 @@ public class FileParser {
         System.out.println(line);
     }
 
-    private String getFilePath() {
-        System.out.println("Type path to a file which you wish to remove delimeters from >>");
-        System.out.println("Example path: ./files/delimeters.txt");
-        return new InputReader().getInputValue();
-    }
-
-    public void removeDelimeter() {
-        String path = this.getFilePath();
+    public void removeDelimiters() {
+        String path = new InputReader().getInputValue("Type path to a file which you wish to remove delimiters from >>" + "\nExample path: ./files/delimiters.txt");
         this.parseFile(path);
     }
 

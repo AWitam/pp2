@@ -13,7 +13,8 @@ public class InputReader {
         return null;
     }
 
-    public String getInputValue() {
+    public String getInputValue(String message) {
+        System.out.println(message);
         return this.readFromScanner();
     }
 }
