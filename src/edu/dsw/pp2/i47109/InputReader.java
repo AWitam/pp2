@@ -6,8 +6,7 @@ public class InputReader {
     private String readFromScanner() {
         Scanner input = new Scanner(System.in);
         while (input.hasNextLine()) {
-            String line = input.nextLine();
-            return line;
+            return input.nextLine();
         }
         input.close();
         return null;
