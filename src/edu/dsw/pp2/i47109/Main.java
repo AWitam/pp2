@@ -6,13 +6,12 @@ public class Main {
         BigIntCalculator bigIntCalculator = new BigIntCalculator();
         bigIntCalculator.exec();
 
-
         // zad 2 - kopiowanie plikow
         FileCopier fileCopier = new FileCopier();
-        // fileCopier.makeCopy();
+        fileCopier.makeCopy();
 
         // zad 3 zamiana delimetrow na spacje
         FileParser fileParser = new FileParser();
-        // fileParser.removeDelimiters();
+        fileParser.removeDelimiters();
     }
 }

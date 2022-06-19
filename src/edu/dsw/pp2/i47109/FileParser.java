@@ -8,13 +8,13 @@ public class FileParser {
         try {
             BufferedReader br = new BufferedReader(new FileReader(path));
             Stream<String> lines = br.lines();
-            lines.forEach(this::removeAndPrintDelimeters);
+            lines.forEach(this::removeAndPrintDelimiters);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
-    private void removeAndPrintDelimeters(String line) {
+    private void removeAndPrintDelimiters(String line) {
         line = line.replaceAll("[,:|.-]", " ");
         line = line.replaceAll("\\s{2,}", " ").trim(); // removes extra whitespace
         System.out.println(line);
