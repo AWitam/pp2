@@ -1,6 +1,13 @@
-package edu.dsw.pp2.i47109;
+package edu.dsw.pp2.i47109._2022_05_08.zad1;
+
+import edu.dsw.pp2.i47109._2022_05_08.helpers.InputReader;
 
 import java.math.BigInteger;
+
+/**
+ *
+ * Prosty kalkulator wykonujacy dzialania na wielkich liczbach pobieranych z linii polecen.
+ */
 
 public class BigIntCalculator {
     private void calculate(String mathOperation) {

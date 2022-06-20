@@ -1,6 +1,16 @@
-package edu.dsw.pp2.i47109;
+package edu.dsw.pp2.i47109._2022_05_08.zad2;
+
+import edu.dsw.pp2.i47109._2022_05_08.helpers.InputReader;
 
 import java.io.*;
+
+/**
+ *
+ * Kopiowanie pliku przy uzyciu pakietu java.io
+ * Kopie plikow zostna zapisane w folderze './files' z rozszerzona koncowka '.copy'.
+ *
+ */
+
 
 public class FileCopier {
     private void copyFile(String originalFilePath) {

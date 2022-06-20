@@ -1,7 +1,16 @@
-package edu.dsw.pp2.i47109;
+package edu.dsw.pp2.i47109._2022_05_08.zad3;
+
+import edu.dsw.pp2.i47109._2022_05_08.helpers.InputReader;
 
 import java.io.*;
 import java.util.stream.Stream;
+
+/**
+ *
+ * Zamienia wystapienia delimitrow: " ,:|.- " na spacje ze wskazanego w linii polecen pliku tesktowego i wyswietla
+ * tak zmodyfikowane linie tesktu.
+ * Przykladowy plik tekstowy z ww znakami znajduje sie w './files/delimiters.txt'
+ */
 
 public class FileParser {
     private void parseFile(String path) {
