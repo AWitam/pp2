@@ -92,6 +92,4 @@ class QueueTest {
         assertTrue(existingElement);
         assertFalse(nonExistingElement);
     }
-
-
 }

@@ -4,10 +4,12 @@ import java.util.Arrays;
 import java.util.NoSuchElementException;
 
 /**
- * FIFO Queue implementation
+ * FIFO queue implementation using generic types.
+ * Methods are based on official Java spec.
  *
- * @param <E>
+ * @param <E> the type of elements to be held in the queue
  */
+
 public class Queue<E> implements GenericQueue<E> {
     private int head = 0;
     private int tail = 0;
