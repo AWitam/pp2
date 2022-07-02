@@ -11,10 +11,10 @@ import java.util.NoSuchElementException;
  */
 
 public class Queue<E> implements GenericQueue<E> {
-    private int head = 0;
+    private final int head = 0;
     private int tail = 0;
     private E[] elements;
-    private int MAX_CAPACITY;
+    private final int MAX_CAPACITY;
 
     /**
      * Default constructor sets MAX_CAPACITY to 5
@@ -34,6 +34,12 @@ public class Queue<E> implements GenericQueue<E> {
     public Queue(int MAX_CAPACITY) {
         this.MAX_CAPACITY = MAX_CAPACITY;
         this.elements = (E[]) new Object[this.MAX_CAPACITY];
+    }
+
+
+    @Override
+    public String toString() {
+        return Arrays.toString(this.elements);
     }
 
     /**

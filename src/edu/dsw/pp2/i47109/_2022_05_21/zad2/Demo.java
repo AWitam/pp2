@@ -26,7 +26,7 @@ public class Demo {
         System.out.printf("String queue: %s%n", stringQueue);
 
         stringQueue.offer("Item 4"); // does not insert element - max capacity reached
-        System.out.printf("Contains Item 4? %s %s%n", stringQueue.contains("Item 4"), stringQueue);
+        System.out.printf("Contains Item 4? %s %n", stringQueue.contains("Item 4"));
 
         stringQueue.clear();
         System.out.printf("Queue cleared %s%n%n", stringQueue);
