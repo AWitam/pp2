@@ -49,7 +49,7 @@ public class Queue<E> implements GenericQueue<E> {
      */
 
     private boolean isFull() {
-        return this.tail == this.MAX_CAPACITY;
+        return this.elements[this.tail] != null;
     }
 
     /**

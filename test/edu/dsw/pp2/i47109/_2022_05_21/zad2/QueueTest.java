@@ -40,6 +40,7 @@ class QueueTest {
         queue.add(3);
         queue.add(10);
         queue.add(2);
+        queue.add(4);
 
         // Act
         Exception exception = assertThrows(IllegalStateException.class, () -> {
